@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+
 import {
   AiOutlineTwitter,
   AiFillYoutube,
@@ -17,8 +18,8 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <main className="flex flex-col items-start justify-between min-h-screen p-4 gap-4 font-sans text-gray-900 md:flex-row bg-slate-100 md:p-24">
-        <div className="w-full h-full md:w-1/2">
+      <main className="flex flex-col items-start justify-between min-h-screen gap-4 p-4 font-sans text-gray-900 md:flex-row bg-slate-100 md:p-24">
+        <div className="w-full h-full max-h-screen md:w-1/2">
           <div className="grid w-full h-full grid-cols-6 grid-rows-4 gap-2 md:gap-4">
             <div className="col-span-6 p-6 bg-white rounded-2xl">
               <Image
@@ -51,13 +52,37 @@ export default function Home() {
             <div></div>
           </div>
         </div>
-        <div className="w-full h-full md:w-1/2 ">
-          <div className="grid w-full h-full gap-2 md:gap-4  grid-cols-6 grid-rows-4">
+        <div className="w-full max-h-screen md:w-1/2 ">
+          <div className="grid w-full h-full grid-cols-6 grid-rows-4 gap-2 md:gap-4">
             <div className="col-span-3 h-[33vh]  bg-white rounded-xl">01</div>
-            <div className="col-span-3  bg-white rounded-xl">02</div>
-            <div className="col-span-3  bg-white rounded-xl">01</div>
-            <div className="col-span-3  bg-white rounded-xl">02</div>
-            <div className="col-span-6  bg-white rounded-xl">Subscrib</div>
+            <div className="flex col-span-3 bg-white rounded-xl md:flex-col">
+              <div className="text-base md:text-4xl">Prive Wallet</div>
+              <div>
+                <Image
+                  src={
+                    "https://cdn.discordapp.com/attachments/911669935363752026/1101028555875426314/prive_project.png"
+                  }
+                  width={240}
+                  height={240}
+                  alt={"Prive Wallet"}
+                />
+              </div>
+            </div>
+            <div className="col-span-3 bg-white rounded-xl">01</div>
+            <div className="flex col-span-3 bg-white rounded-xl md:flex-col">
+              <div className="text-base md:text-4xl">CityDAO</div>
+              <div>
+                <Image
+                  src={
+                    "https://cdn.discordapp.com/attachments/911669935363752026/1101020330308423750/gitghubn.png"
+                  }
+                  width={240}
+                  height={240}
+                  alt={"Prive Wallet"}
+                />
+              </div>
+            </div>
+            <div className="col-span-6 bg-white rounded-xl">Subscrib</div>
           </div>
         </div>
       </main>
