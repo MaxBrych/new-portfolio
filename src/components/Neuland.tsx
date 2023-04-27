@@ -16,13 +16,13 @@ const IconComponent: React.FC<IconComponentProps> = ({
   cta,
 }) => {
   return (
-    <div className="flex items-center justify-center col-span-6 p-4 bg-white rounded-2xl">
+    <div className="flex items-center justify-center col-span-6 p-6 bg-white rounded-2xl">
       <div className="flex flex-col justify-center w-1/2 h-full">
-        <h1 className="text-3xl md:text-4xl font-medium">{title}</h1>{" "}
+        <h1 className="text-3xl font-medium md:text-4xl">{title}</h1>{" "}
         <p className="mb-4 text-sm md:text-base">{description}</p>
         <div className="flex-shrink-0">
           <Link
-            className="px-6 bg-gray-300 text-sm md:text-base font-bold rounded-full cursor-pointer h-11"
+            className="px-6 text-sm font-bold bg-gray-300 rounded-full cursor-pointer h-11"
             href={""}
           >
             {cta}
