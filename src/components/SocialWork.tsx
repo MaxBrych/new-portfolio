@@ -12,7 +12,7 @@ interface IconComponentProps {
 
 const IconComponent: React.FC<IconComponentProps> = ({ image, label }) => {
   return (
-    <div className="flex items-start justify-between col-span-3 p-4 bg-white rounded-3xl">
+    <div className="flex items-start justify-between col-span-2 p-4 bg-white md:col-span-3 rounded-3xl">
       <div className="flex flex-col justify-between h-full">
         <h1 className="text-3xl font-bold tracking-tight md:text-4xl">
           {label}

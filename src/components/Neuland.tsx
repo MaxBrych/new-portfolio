@@ -3,42 +3,50 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
+import { FiArrowUpRight } from "react-icons/fi";
+import CTA from "./common/CTA";
 
 interface IconComponentProps {
   title: string;
   description: string;
   cta: string;
+  link: any;
 }
 
 const IconComponent: React.FC<IconComponentProps> = ({
   title,
   description,
   cta,
+  link,
 }) => {
   return (
-    <div className="flex items-center justify-center col-span-6 p-6 bg-white rounded-2xl">
-      <div className="flex flex-col justify-center w-1/2 h-full">
-        <h1 className="text-3xl md:text-4xl font-medium">{title}</h1>{" "}
-        <p className="mb-4 text-sm md:text-base">{description}</p>
-        <div className="flex-shrink-0">
-          <Link
-            className="px-6 bg-gray-300 text-sm md:text-base font-bold rounded-full cursor-pointer h-11"
-            href={""}
-          >
-            {cta}
-          </Link>
-        </div>
+    <motion.div
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
+      exit={{ scale: 0 }}
+      transition={{ duration: 0.2 }}
+      className="flex items-center justify-center col-span-4 row-span-2 overflow-hidden bg-white md:col-span-6 rounded-3xl"
+    >
+      <div className="flex flex-col justify-center w-1/2 h-full p-4 md:p-8">
+        <h1 className="text-2xl font-medium text-dark-30 md:text-4xl">
+          {title}
+        </h1>{" "}
+        <p className="mb-4 text-sm md:leading-5 text-dark-10 md:text-base">
+          {description}
+        </p>
+        <CTA cta={cta} href={link} />
       </div>
       <Image
         width={324}
         height={324}
         alt={""}
-        className="object-cover w-1/2"
+        className="object-contain w-1/2 h-full"
         src={
           "https://cdn.discordapp.com/attachments/911669935363752026/1100135571059384321/NEULAND_Cover_V1.png"
         }
       />
-    </div>
+    </motion.div>
   );
 };
 

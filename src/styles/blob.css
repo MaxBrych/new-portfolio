@@ -1,0 +1,19 @@
+.blob-gradient {
+  background: linear-gradient(45deg, #f06, #fbba72);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+  opacity: 0.5;
+  filter: blur(1rem);
+  animation: blobAnimation 10s infinite linear alternate;
+}
+
+@keyframes blobAnimation {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(1.1);
+  }
+}
