@@ -18,10 +18,10 @@ const IconComponent: React.FC<IconComponentProps> = ({ Icon, color, href }) => {
     <motion.div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="flex items-center justify-center col-span-1 row-span-1 transition-all duration-100 bg-white cursor-pointer hover:scale-105 hover md:row-span-1 md:col-span-3 rounded-3xl"
+      className="flex items-center justify-center col-span-2 row-span-1 transition-all duration-100 bg-white cursor-pointer hover:scale-105 hover md:row-span-1 md:col-span-3 rounded-3xl"
     >
       <Link href={href}>
-        <Icon className={`w-8 h-8 md:w-24 md:h-24 ${color}`} />
+        <Icon className={`w-8 h-8 md:w-32 md:h-32 ${color}`} />
         {isHovered && (
           <motion.div
             className="absolute top-4 right-4"

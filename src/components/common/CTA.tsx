@@ -7,9 +7,10 @@ export default function CTA({ cta, href }: any) {
     <div className="flex-shrink-0">
       <Link
         href={href}
-        className="flex items-center justify-between gap-2 py-2 pl-5 pr-2 text-sm font-bold tracking-tight transition-all duration-150 rounded-full cursor-pointer md:text-base h-11 md:gap-3 bg-dark-95 hover:bg-dark-90"
+        className="inline-flex items-center justify-between gap-2 py-2 pl-4 pr-2 text-xs font-bold tracking-tight transition-all duration-150 rounded-full cursor-pointer md:pl-5 h-9 md:text-base md:h-11 md:gap-3 bg-dark-95 hover:bg-dark-90"
       >
-        {cta} <FiArrowUpRight className="w-8 h-8 p-1 rounded-full bg-cyan-70" />
+        {cta}{" "}
+        <FiArrowUpRight className="w-6 h-6 p-1 rounded-full md:w-8 md:h-8 bg-cyan-70" />
       </Link>
     </div>
   );

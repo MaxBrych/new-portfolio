@@ -32,7 +32,7 @@ const IconComponent: React.FC<IconComponentProps> = ({
         <h1 className="text-2xl font-medium text-dark-30 md:text-4xl">
           {title}
         </h1>{" "}
-        <p className="mb-4 text-sm md:leading-5 text-dark-10 md:text-base">
+        <p className="mb-4 text-xs leading-4 md:leading-5 text-dark-10 md:text-base">
           {description}
         </p>
         <CTA cta={cta} href={link} />

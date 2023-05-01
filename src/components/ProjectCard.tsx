@@ -29,12 +29,12 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
         animate={{ scale: 1 }}
         exit={{ scale: 0 }}
       >
-        <div className="w-1/2 mx-4 my-4 md:mx-8 md:mt-8 md:w-full">
+        <div className="flex-grow w-1/2 mx-4 my-4 md:mx-8 md:mt-8 md:w-full">
           <h1 className="text-2xl font-semibold tracking-tight text-dark-30 md:text-4xl">
             {" "}
             {title}
           </h1>
-          <p className="mt-2 mb-6 text-sm font-medium text-dark-50 md:text-base">
+          <p className="mt-2 mb-6 text-xs font-medium text-dark-50 md:text-base">
             {description}
           </p>
           <CTA cta={cta} href={link} />
