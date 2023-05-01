@@ -37,9 +37,8 @@ export default function NewsletterForm() {
         Neues aus dem Neuland
       </h2>
       <p className="mb-4 text-sm leading-4 text-gray-500 md:leading-5 md:text-base">
-        Erhalte Visionen für eine bessere Zukunft. Ein dezentrales Internet. KI.
-        Und wie wir neue Technologien nutzen, um die Welt zu einem besseren Ort
-        zu machen.
+        Erhalte Visionen und Ideen für eine bessere Zukunft durch neue
+        Technologien, das Web3 und KI.
       </p>
       <form
         onSubmit={handleSubmit}
