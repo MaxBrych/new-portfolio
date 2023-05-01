@@ -34,11 +34,12 @@ export default function NewsletterForm() {
   return (
     <div className="col-span-4 row-span-2 p-4 bg-white md:p-8 md:row-span-1 rounded-3xl md:col-span-6">
       <h2 className="mb-1 text-xl font-bold tracking-tight md:mb-2 md:text-3xl">
-        Subscribe to Newsletter
+        Neues aus dem Neuland
       </h2>
       <p className="mb-4 text-sm leading-4 text-gray-500 md:leading-5 md:text-base">
-        Get emails from me about web development, tech, and early access to new
-        articles.
+        Erhalte Visionen für eine bessere Zukunft. Ein dezentrales Internet. KI.
+        Und wie wir neue Technologien nutzen, um die Welt zu einem besseren Ort
+        zu machen.
       </p>
       <form
         onSubmit={handleSubmit}
@@ -60,7 +61,7 @@ export default function NewsletterForm() {
           type="submit"
           className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-medium transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-cyan-50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-70 focus:ring-offset-1 focus:ring-offset-cyan-50"
         >
-          Absenden
+          Abonnieren
         </button>
       </form>
       {message && <p className="mt-4 text-sm text-cyan-70">{message}</p>}
