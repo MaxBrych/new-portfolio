@@ -19,7 +19,7 @@ module.exports = {
       },
       colors: {
         cyan: {
-          10: "#001E2C",
+          10: "#001d35",
           20: "#003549",
           30: "#004D68",
           40: "#006689",
@@ -41,8 +41,8 @@ module.exports = {
           70: "#A5ACB2",
           80: "#C0C7CD",
           90: "#DCE3E9",
-          95: "#EFF2F5",
-          99: "#FBFCFF",
+          95: "#EBF2FE",
+          99: "#f1f4f9",
         },
         white: "#FFFFFF",
         black: "#000000",

@@ -1,5 +1,3 @@
-import Image from "next/image";
-import { Inter } from "next/font/google";
 import ProjectCard from "@/components/ProjectCard";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -9,8 +7,7 @@ import { FiFigma, FiGithub } from "react-icons/fi";
 import Neuland from "@/components/Neuland";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-
-const inter = Inter({ subsets: ["latin"] });
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,7 +22,7 @@ export default function Home() {
           animate={{ scale: 1 }}
           exit={{ scale: 0 }}
           transition={{ duration: 0.2 }}
-          className="grid min-h-screen grid-cols-4 grid-rows-4 gap-2 p-4 font-sans md:gap-4 md:grid-cols-12 md:grid-rows-3 text-dark-10 bg-dark-95 md:px-24 md:py-16"
+          className="grid min-h-screen grid-cols-4 grid-rows-4 gap-2 p-4 font-sans md:gap-4 md:grid-cols-12 md:grid-rows-3 text-dark-10 bg-dark-99 md:px-24 md:py-16"
         >
           <div className="absolute top-0 left-0 w-64 h-64 blob-gradient"></div>
 
@@ -70,12 +67,14 @@ export default function Home() {
             description={"Branding, Website Design und Entwicklung"}
             cta={"Zur Website"}
           />
+          {/* 
           <Neuland
             link={"https://www.citydao.io/"}
             title={"NEULAND"}
             description={"Visions for a Solarpunk future and the Network State"}
             cta={"Jetzt Lesen"}
-          />
+          /> */}
+          <NewsletterForm />
           <div className="w-64 h-64 blob-gradient"></div>
         </motion.main>
       )}
