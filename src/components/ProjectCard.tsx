@@ -29,7 +29,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
         animate={{ scale: 1 }}
         exit={{ scale: 0 }}
       >
-        <div className="flex-grow w-1/2 mx-4 my-4 md:mx-8 md:mt-8 md:w-full">
+        <div className="flex-grow w-1/2 mx-4 my-4 md:mx-6 md:mt-6 md:w-full">
           <h1 className="text-xl font-semibold tracking-tight text-dark-30 md:text-4xl">
             {" "}
             {title}

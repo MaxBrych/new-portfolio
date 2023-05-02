@@ -30,12 +30,12 @@ export default function Home() {
           <IconComponent
             href={"https://www.figma.com/@maxbrych"}
             Icon={FiFigma}
-            color={"text-dark-30"}
+            color={"text-dark-50"}
           />
           <IconComponent
             href={"https://github.com/MaxBrych"}
             Icon={FiGithub}
-            color={"text-dark-30"}
+            color={"text-dark-50"}
           />
           <IconComponent
             href={"https://twitter.com/MaxBrych"}

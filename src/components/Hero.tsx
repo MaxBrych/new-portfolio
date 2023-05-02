@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <motion.div className="col-span-4 row-span-2 p-4 bg-white cursor-default md:p-8 md:row-span-1 rounded-3xl md:col-span-6">
+    <motion.div className="col-span-4 row-span-2 p-4 bg-white cursor-default md:p-6 md:row-span-1 rounded-3xl md:col-span-6">
       <Image
         width={96}
         height={96}
@@ -18,9 +18,8 @@ export default function Hero() {
         Hi, ich bin Max!
       </h1>
       <p className="text-base leading-5 md:leading-7 text-dark-10 md:text-xl">
-        Ein Web Entwickler und Designer aus Deutschland. Ich interessiere mich
-        für Web3 und KI Prompts die meine Arbeit und mein Leben kreativer und
-        produktiver machen.
+        Ein Web Entwickler und Designer aus Deutschland.
+        <br /> Ich interessiere mich für Web3, KI Prompts und neue Technologien.
       </p>
     </motion.div>
   );
