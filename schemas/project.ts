@@ -11,6 +11,11 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "description",
+      title: "Description",
+      type: "text",
+    }),
+    defineField({
       name: "slug",
       title: "Slug",
       type: "slug",
@@ -25,12 +30,6 @@ export default defineType({
       type: "url",
     }),
     defineField({
-      name: "author",
-      title: "Author",
-      type: "reference",
-      to: { type: "author" },
-    }),
-    defineField({
       name: "mainImage",
       title: "Main image",
       type: "image",
@@ -39,25 +38,9 @@ export default defineType({
       },
     }),
     defineField({
-      name: "categories",
-      title: "Categories",
-      type: "array",
-      of: [{ type: "reference", to: { type: "category" } }],
-    }),
-    defineField({
       name: "publishedAt",
       title: "Published at",
       type: "datetime",
-    }),
-    defineField({
-      name: "description",
-      title: "Description",
-      type: "text",
-    }),
-    defineField({
-      name: "body",
-      title: "Body",
-      type: "blockContent",
     }),
   ],
 
