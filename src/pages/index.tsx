@@ -15,7 +15,7 @@ export default function Home() {
     setIsVisible(true);
   }, []);
   return (
-    <AnimatePresence>
+    <main>
       {isVisible && (
         <motion.main
           initial={{ scale: 0 }}
@@ -78,6 +78,6 @@ export default function Home() {
           <div className="w-64 h-64 blob-gradient"></div>
         </motion.main>
       )}
-    </AnimatePresence>
+    </main>
   );
 }
