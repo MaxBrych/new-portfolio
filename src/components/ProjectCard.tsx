@@ -30,7 +30,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
         exit={{ scale: 0 }}
       >
         <div className="flex-grow w-1/2 mx-4 my-4 md:mx-6 md:mt-6 md:w-full">
-          <h1 className="text-xl font-semibold tracking-tight text-dark-30 md:text-4xl">
+          <h1 className="text-xl font-bold tracking-tight text-dark-30 md:text-3xl">
             {" "}
             {title}
           </h1>

@@ -29,10 +29,8 @@ const IconComponent: React.FC<IconComponentProps> = ({
       className="flex items-center justify-center col-span-4 row-span-2 overflow-hidden bg-white md:col-span-6 rounded-3xl"
     >
       <div className="flex flex-col justify-center w-1/2 h-full p-4 md:p-8">
-        <h1 className="text-2xl font-medium text-dark-30 md:text-4xl">
-          {title}
-        </h1>{" "}
-        <p className="mb-4 text-xs leading-4 md:leading-5 text-dark-10 md:text-base">
+        <h1 className="text-2xl font-bold text-dark-30 md:text-3xl">{title}</h1>{" "}
+        <p className="mb-4 text-xs leading-4 md:leading-5 text-dark-10 md:text-medium">
           {description}
         </p>
         <CTA cta={cta} href={link} />

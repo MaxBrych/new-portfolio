@@ -33,12 +33,12 @@ export default function NewsletterForm() {
 
   return (
     <div className="col-span-4 row-span-2 p-4 bg-white md:p-6 md:row-span-1 rounded-3xl md:col-span-6">
-      <h2 className="mb-1 text-xl font-semibold tracking-tight text-dark-30 md:mb-2 md:text-3xl">
+      <h2 className="mb-1 text-xl font-bold tracking-tight text-dark-30 md:mb-2 md:text-3xl">
         Folge meinem Newsletter
       </h2>
-      <p className="mb-4 text-sm leading-4 text-dark-10 md:leading-5 md:text-base">
-        Erhalte Visionen und Ideen für eine bessere Zukunft durch neue
-        Technologien, das Web3 und KI.
+      <p className="mb-4 text-sm font-medium leading-4 text-dark-10 md:leading-5 md:text-base">
+        Erhalte Visionen und Ideen für eine bessere Zukunft durch die digitale
+        Revolution.
       </p>
       <form
         onSubmit={handleSubmit}
