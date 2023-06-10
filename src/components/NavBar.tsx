@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   Box,
   Link as ChakraLink,
@@ -7,7 +8,7 @@ import {
   Flex,
   useColorModeValue,
 } from "@chakra-ui/react";
-import router, { useRouter } from "next/router";
+import { useRouter } from "next/router";
 import { FunctionComponent } from "react";
 import NextLink from "next/link";
 import { SunIcon, MoonIcon } from "@chakra-ui/icons";
@@ -18,7 +19,12 @@ interface LinkProps {
 }
 
 const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
-  const isActive = router.pathname === href;
+  const router = useRouter();
+  const [isActive, setIsActive] = useState(false);
+
+  useEffect(() => {
+    setIsActive(router.pathname === href);
+  }, [router]);
 
   return (
     <NextLink href={href} passHref>
