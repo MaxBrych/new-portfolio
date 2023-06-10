@@ -1,5 +1,5 @@
 import React from "react";
 
 export default function Project() {
-  return <div>P</div>;
+  return <div>Pt</div>;
 }
