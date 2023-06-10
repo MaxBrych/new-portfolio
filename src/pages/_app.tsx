@@ -4,13 +4,27 @@ import "../styles/blob.css";
 import type { AppProps } from "next/app";
 import { Analytics } from "@vercel/analytics/react";
 import CookieConsent from "react-cookie-consent";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { mode } from "@chakra-ui/theme-tools"; // <-- import the mode function
+
+const theme = extendTheme({
+  styles: {
+    global: (props: any) => ({
+      body: {
+        bg: mode("white", "gray.800")(props),
+        color: mode("gray.800", "whiteAlpha.900")(props),
+      },
+    }),
+  },
+});
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Component {...pageProps} />
-      <Analytics />
-      {/* <CookieConsent
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+        <Analytics />
+        {/* <CookieConsent
         location="bottom"
         buttonText="Akzeptieren"
         cookieName="userConsent"
@@ -22,6 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         Diese Website verwendet Cookies, um Ihre Benutzererfahrung zu verbessern
         und um Newsletter-Anmeldungen zu verwalten.
       </CookieConsent>*/}
+      </ChakraProvider>
     </>
   );
 }

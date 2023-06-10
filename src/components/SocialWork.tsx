@@ -1,4 +1,5 @@
 // IconComponent.tsx
+import { useColorModeValue } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,6 +12,8 @@ interface IconComponentProps {
 }
 
 const IconComponent: React.FC<IconComponentProps> = ({ image, label }) => {
+  const bg = useColorModeValue("white", "gray.700");
+  const text = useColorModeValue("gray.700", "gray.100");
   return (
     <div className="flex items-start justify-between col-span-2 p-4 bg-white md:col-span-3 rounded-3xl">
       <div className="flex flex-col justify-between h-full">
