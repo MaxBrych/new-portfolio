@@ -1,8 +1,12 @@
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import { useState, FormEvent } from "react";
 
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const bg = useColorModeValue("white", "gray.700");
+  const text = useColorModeValue("gray.700", "gray.200");
+  const heading = useColorModeValue("gray.700", "gray.100");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -32,13 +36,22 @@ export default function NewsletterForm() {
   };
 
   return (
-    <div className="col-span-4 row-span-2 p-4 bg-white md:p-6 md:row-span-1 rounded-3xl md:col-span-6">
-      <h2 className="mb-1 text-xl font-semibold tracking-tight text-dark-30 md:mb-2 md:text-3xl">
+    <Box
+      bg={bg}
+      className="col-span-4 row-span-2 p-4 bg-white md:p-6 md:row-span-1 rounded-3xl md:col-span-6"
+    >
+      <h2
+        color={heading}
+        className="mb-1 text-xl font-bold tracking-tight md:mb-2 md:text-2xl"
+      >
         Folge meinem Newsletter
       </h2>
-      <p className="mb-4 text-sm leading-4 text-dark-10 md:leading-5 md:text-base">
-        Erhalte Visionen und Ideen für eine bessere Zukunft durch neue
-        Technologien, das Web3 und KI.
+      <p
+        color={text}
+        className="mb-4 text-sm font-medium leading-4 md:leading-5 md:text-base"
+      >
+        Erhalte Visionen und Ideen für eine bessere Zukunft durch die digitale
+        Revolution.
       </p>
       <form
         onSubmit={handleSubmit}
@@ -58,12 +71,12 @@ export default function NewsletterForm() {
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-semibold transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-cyan-50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-70 focus:ring-offset-1 focus:ring-offset-cyan-50"
+          className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-bold transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-cyan-50 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-70 focus:ring-offset-1 focus:ring-offset-cyan-50"
         >
           Abonnieren
         </button>
       </form>
       {message && <p className="mt-4 text-sm text-cyan-70">{message}</p>}
-    </div>
+    </Box>
   );
 }

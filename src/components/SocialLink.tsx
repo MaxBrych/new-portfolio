@@ -1,4 +1,5 @@
 // IconComponent.tsx
+import { Box, useColorModeValue } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
@@ -13,11 +14,14 @@ interface IconComponentProps {
 
 const IconComponent: React.FC<IconComponentProps> = ({ Icon, color, href }) => {
   const [isHovered, setIsHovered] = React.useState(false);
+  const bg = useColorModeValue("white", "gray.700");
+  const text = useColorModeValue("gray.700", "gray.100");
 
   return (
-    <motion.div
+    <Box
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      bg={bg}
       className="flex items-center justify-center col-span-2 row-span-1 transition-all duration-100 bg-white cursor-pointer hover:scale-105 hover md:row-span-1 md:col-span-3 rounded-3xl"
     >
       <Link href={href}>
@@ -34,7 +38,7 @@ const IconComponent: React.FC<IconComponentProps> = ({ Icon, color, href }) => {
           </motion.div>
         )}
       </Link>
-    </motion.div>
+    </Box>
   );
 };
 
