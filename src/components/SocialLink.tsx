@@ -14,7 +14,7 @@ interface IconComponentProps {
 
 const IconComponent: React.FC<IconComponentProps> = ({ Icon, color, href }) => {
   const [isHovered, setIsHovered] = React.useState(false);
-  const bg = useColorModeValue("white", "gray.700");
+  const bg = useColorModeValue("white", "#222327");
   const text = useColorModeValue("gray.700", "gray.100");
 
   return (

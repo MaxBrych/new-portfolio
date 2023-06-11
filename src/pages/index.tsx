@@ -19,7 +19,7 @@ export default function Home() {
     setIsVisible(true);
   }, []);
 
-  const bg = useColorModeValue("gray.100", "gray.900");
+  const bg = useColorModeValue("gray.100", "blackAlpha.700");
   const color = useColorModeValue("gray.700", "white");
 
   return (
@@ -84,7 +84,6 @@ export default function Home() {
               />
 
               <NewsletterForm />
-              <div className="w-64 h-64 blob-gradient bg-cyan.50"></div>
             </motion.main>
           )}
         </Box>

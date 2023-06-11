@@ -4,7 +4,7 @@ import { useState, FormEvent } from "react";
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const bg = useColorModeValue("white", "gray.700");
+  const bg = useColorModeValue("white", "#222327");
   const text = useColorModeValue("gray.700", "gray.200");
   const heading = useColorModeValue("gray.700", "gray.100");
 

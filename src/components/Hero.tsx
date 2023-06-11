@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
 
 export default function Hero() {
-  const bg = useColorModeValue("white", "gray.700");
+  const bg = useColorModeValue("white", "#222327");
   const heading = useColorModeValue("gray.700", "gray.100");
   const text = useColorModeValue("gray.700", "gray.200");
 
