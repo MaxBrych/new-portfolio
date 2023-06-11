@@ -6,6 +6,8 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import Link from "next/link";
 import { MdArrowBackIosNew } from "react-icons/md";
+import { Manrope } from "next/font/google";
+const manrope = Manrope({ subsets: ["latin"] });
 
 type Props = {
   params: {
@@ -45,7 +47,9 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
 
 const Post = ({ post }: { post: Post }) => {
   return (
-    <div className="flex flex-col items-center w-full font-modern md:p-8 sm:py-14">
+    <div
+      className={`${manrope.className} flex flex-col items-center w-full font-modern md:p-8 sm:py-14`}
+    >
       <div className="py-20 md:py-18 sm:w-2/3">
         <div className="px-4 ">
           <div>
@@ -95,7 +99,7 @@ const Post = ({ post }: { post: Post }) => {
         </div>
         <div className="absolute invisible left-4 top-20 sm:left-6 sm:top-24 md:visible">
           <Link href="/blog">
-            <MdArrowBackIosNew className="w-12 h-12 p-3 border border-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700" />
+            <MdArrowBackIosNew className="w-12 h-12 p-3 border border-gray-300 rounded-full hover:bg-gray-200 dark:hover:bg-gray-300" />
           </Link>
         </div>
       </div>

@@ -4,6 +4,7 @@ import { client } from "../../lib/sanity.client";
 
 import BlogList from "../components/BlogList";
 import Navbar from "@/components/NavBar";
+import { Container, useColorModeValue } from "@chakra-ui/react";
 
 const query = groq`
 *[_type=='post']{
@@ -14,10 +15,21 @@ const query = groq`
 `;
 
 export default function Project({ posts }: any) {
+  const bg = useColorModeValue("gray.100", "#0a0b0d");
+  const color = useColorModeValue("gray.700", "white");
+
   return (
-    <div className="flex flex-col justify-between min-h-screen">
+    <Container
+      pt={4}
+      maxW="full"
+      className="md:px-24 md:py-16 "
+      bg={bg}
+      minHeight={"100vh"}
+      color={color}
+    >
+      <Navbar />
       <BlogList posts={posts} />
-    </div>
+    </Container>
   );
 }
 

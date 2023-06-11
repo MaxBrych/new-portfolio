@@ -21,7 +21,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
   cta,
   link,
 }) => {
-  const bg = useColorModeValue("white", "#222327");
+  const bg = useColorModeValue("white", "whiteAlpha.200");
   const heading = useColorModeValue("gray.700", "gray.100");
   const text = useColorModeValue("gray.700", "gray.200");
 
@@ -41,7 +41,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           </h1>
           <p
             color={text}
-            className="mb-6 text-xs font-medium md:mt-2 md:text-base"
+            className="w-full mb-6 text-xs font-medium md:mt-2 md:text-base"
           >
             {description}
           </p>

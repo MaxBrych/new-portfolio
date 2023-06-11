@@ -19,7 +19,7 @@ export default function Home() {
     setIsVisible(true);
   }, []);
 
-  const bg = useColorModeValue("gray.100", "blackAlpha.700");
+  const bg = useColorModeValue("gray.100", "#0a0b0d");
   const color = useColorModeValue("gray.700", "white");
 
   return (
