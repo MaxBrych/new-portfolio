@@ -31,7 +31,8 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
       <ChakraLink
         px={5}
         py={2}
-        h={10}
+        h={{ base: 8, md: 10 }}
+        className="text-sm sm:text-base"
         rounded={"full"}
         bg={isActive ? "white" : undefined}
         color={isActive ? "black" : "#797979"}
@@ -62,7 +63,13 @@ const Navbar: FunctionComponent = () => {
       maxWidth={"container.xl"}
     >
       <Box flexShrink={0} flexGrow={1}></Box>
-      <HStack spacing={1} bg={bg} rounded={"full"} p={2} py={3} h={12}>
+      <HStack
+        spacing={1}
+        bg={bg}
+        rounded={"full"}
+        px={{ base: 1, md: 2 }}
+        h={{ base: 10, md: 12 }}
+      >
         <Box>
           <Link href="/">Home</Link>
         </Box>

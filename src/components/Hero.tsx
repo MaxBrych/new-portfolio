@@ -30,7 +30,7 @@ export default function Hero() {
       </h1>
       <p
         color={text}
-        className="text-base font-medium leading-5 md:leading-7 md:text-lg"
+        className="text-sm font-medium leading-5 md:leading-7 md:text-lg"
       >
         Ein Web Entwickler und Designer aus Deutschland.
         <br /> Ich interessiere mich für Web3, KI Prompts und neue Technologien.

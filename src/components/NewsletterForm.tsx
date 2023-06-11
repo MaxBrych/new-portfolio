@@ -48,7 +48,7 @@ export default function NewsletterForm() {
       </h2>
       <p
         color={text}
-        className="mb-4 text-sm font-medium leading-4 md:leading-5 md:text-base"
+        className="mb-4 text-xs font-medium leading-4 md:leading-5 md:text-base"
       >
         Erhalte Visionen und Ideen für eine bessere Zukunft durch die digitale
         Revolution.

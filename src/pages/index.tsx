@@ -27,7 +27,7 @@ export default function Home() {
       <Container
         pt={4}
         maxW="full"
-        className="md:px-24 md:py-16 "
+        className="p-0 md:px-24 md:py-16 "
         bg={bg}
         color={color}
       >
@@ -39,7 +39,7 @@ export default function Home() {
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
               transition={{ duration: 0.2 }}
-              className={`${manrope.className} grid w-full min-h-screen grid-cols-4 grid-rows-4 gap-2 p-4 font-sans md:gap-4 md:grid-cols-12 md:grid-rows-3  `}
+              className={`${manrope.className} grid w-full md:p-6 min-h-screen grid-cols-4 grid-rows-4 gap-2 font-sans md:gap-4 md:grid-cols-12 md:grid-rows-3  `}
             >
               <Hero />
               <IconComponent

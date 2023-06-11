@@ -1,8 +1,11 @@
+import { useColorModeValue } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export default function CTA({ cta, href }: any) {
+  const bg = useColorModeValue("white", "whiteAlpha.200");
+  const text = useColorModeValue("gray.700", "gray.200");
   return (
     <div className="flex-shrink-0">
       <Link
