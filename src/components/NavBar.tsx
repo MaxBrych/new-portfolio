@@ -74,7 +74,7 @@ const Navbar: FunctionComponent = () => {
           <Link href="/">Home</Link>
         </Box>
         <Box>
-          <Link href="/about">About</Link>
+          <Link href="/projects">Projekte</Link>
         </Box>
         <Box>
           <Link href="/blog">Blog</Link>
