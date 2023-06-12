@@ -5,6 +5,8 @@ import { Container, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 
 export default function Projects() {
+  const bg = useColorModeValue("gray.100", "#0a0b0d");
+  const color = useColorModeValue("gray.700", "white");
   const { data, isLoading, isError } = useProject();
 
   if (isLoading) {
@@ -13,8 +15,7 @@ export default function Projects() {
   if (isError) {
     return <div>Error: {isError.message}</div>;
   }
-  const bg = useColorModeValue("gray.100", "#0a0b0d");
-  const color = useColorModeValue("gray.700", "white");
+
   return (
     <Container
       pt={4}

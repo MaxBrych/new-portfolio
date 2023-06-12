@@ -14,7 +14,7 @@ const query = groq`
 } | order(_createdAt desc)
 `;
 
-export default function Project({ posts }: any) {
+export default function Blog({ posts }: any) {
   const bg = useColorModeValue("gray.100", "#0a0b0d");
   const color = useColorModeValue("gray.700", "white");
 

@@ -5,6 +5,7 @@ import ClientSideRoute from "./ClientSideRoute";
 import urlFor from "../../lib/urlFor";
 import Image from "next/image";
 import { useProject } from "./useProjects";
+import Link from "next/link";
 
 type Props = {
   projects: Project[];
@@ -15,12 +16,12 @@ export default function ProjectSection({ projects }: Props) {
     <div className="py-8 md:px-16 md:py-14">
       <div className="flex justify-between py-2">
         <h1 className="mb-4 text-3xl font-medium">Projekte</h1>
-        <a
+        <Link
           href="/projects"
           className="h-10 px-4 py-2 text-black bg-white rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200"
         >
           Mehr sehen
-        </a>
+        </Link>
       </div>
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 gap-y-8 md:gap-y-16">
         {/* Posts */}
