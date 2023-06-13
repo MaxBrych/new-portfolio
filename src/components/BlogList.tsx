@@ -23,10 +23,13 @@ function BlogList({ posts }: Props) {
       <div
         className={` ${manrope.className} grid grid-cols-1 gap-10 px-4 py-16 md:grid-cols-3 md:px-16 gap-y-16`}
       >
+        <div className="flex py-2">
+          <h1 className="mb-4 text-3xl font-medium">Blog</h1>
+        </div>
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
-            <div className="flex flex-col p-4 transition-all duration-150 bg-white cursor-pointer group rounded-xl hover:shadow-md">
+            <div className="flex flex-col transition-all duration-150 cursor-pointer group ">
               <div className="relative w-full h-56">
                 <Image
                   className="object-cover object-left rounded-2xl"
