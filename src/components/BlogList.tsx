@@ -20,12 +20,11 @@ function BlogList({ posts }: Props) {
 
   return (
     <Box w={"full"} bg={bg} color={color} className="">
+      <h1 className="py-2 mb-4 text-3xl font-medium">Blog</h1>
+
       <div
         className={` ${manrope.className} grid grid-cols-1 gap-10 px-4 py-16 md:grid-cols-3 md:px-16 gap-y-16`}
       >
-        <div className="flex py-2">
-          <h1 className="mb-4 text-3xl font-medium">Blog</h1>
-        </div>
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
