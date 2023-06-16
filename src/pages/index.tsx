@@ -68,7 +68,7 @@ export default function Home() {
                 }
                 title={"Prive Wallet"}
                 image={
-                  "https://cdn.discordapp.com/attachments/911669935363752026/1101028555875426314/prive_project.png"
+                  "https://cdn.discordapp.com/attachments/911669935363752026/1119139191343816734/Frame_54.png"
                 }
                 description={"Konzept und UI/UX Design"}
                 cta={"Jetzt Testen"}
@@ -77,7 +77,7 @@ export default function Home() {
                 link={"https://www.citydao.io/"}
                 title={"CityDAO"}
                 image={
-                  "https://cdn.discordapp.com/attachments/911669935363752026/1101172686211793067/citydao_proect.png"
+                  "https://cdn.discordapp.com/attachments/911669935363752026/1119139191813586994/Frame_53.png"
                 }
                 description={"Branding, Website Design und Entwicklung"}
                 cta={"Zur Website"}

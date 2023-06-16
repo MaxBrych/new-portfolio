@@ -60,7 +60,7 @@ const Post = ({ post }: { post: Post }) => {
         <div className="py-20 md:py-18 md:w-1/3">
           <div className="px-4 ">
             <div>
-              <h1 className="text-5xl font-medium tracking-tight md:text-6xl leading-16">
+              <h1 className="text-4xl font-bold tracking-tight md:text-5xl leading-16">
                 {post.title}
               </h1>
               <div className="flex justify-between py-6 sm:py-8 ">

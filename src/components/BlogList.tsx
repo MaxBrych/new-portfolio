@@ -19,12 +19,11 @@ function BlogList({ posts }: Props) {
   const color = useColorModeValue("gray.700", "white");
 
   return (
-    <Box w={"full"} bg={bg} color={color} className="">
-      <h1 className="py-2 mb-4 text-3xl font-medium">Blog</h1>
-
-      <div
-        className={` ${manrope.className} grid grid-cols-1 gap-10 px-4 py-16 md:grid-cols-3 md:px-16 gap-y-16`}
-      >
+    <div className="py-8 md:px-16 md:py-14">
+      <div className="flex py-2">
+        <h1 className="mb-4 text-3xl font-medium">Blog</h1>
+      </div>
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3 gap-y-8 md:gap-y-16">
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
@@ -59,7 +58,7 @@ function BlogList({ posts }: Props) {
           </ClientSideRoute>
         ))}
       </div>
-    </Box>
+    </div>
   );
 }
 
