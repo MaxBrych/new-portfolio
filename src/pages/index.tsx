@@ -77,7 +77,7 @@ export default function Home() {
                 link={"https://www.citydao.io/"}
                 title={"CityDAO"}
                 image={
-                  "https://cdn.discordapp.com/attachments/911669935363752026/1119139191813586994/Frame_53.png"
+                  "https://cdn.discordapp.com/attachments/911669935363752026/1120950365798543540/citydaoo.png"
                 }
                 description={"Branding, Website Design und Entwicklung"}
                 cta={"Zur Website"}

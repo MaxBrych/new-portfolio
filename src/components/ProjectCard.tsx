@@ -48,15 +48,13 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           <CTA cta={cta} href={link} />
         </div>
 
-        <div className="items-end justify-end h-full ">
-          <Image
-            className="object-contain w-full h-full "
-            src={image}
-            width={240}
-            height={240}
-            alt={title}
-          />
-        </div>
+        <Image
+          className="object-contain bottom-0 w-full h-full "
+          src={image}
+          width={240}
+          height={240}
+          alt={title}
+        />
       </Box>
     </>
   );
