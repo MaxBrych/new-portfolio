@@ -34,11 +34,13 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
         h={{ base: 8, md: 10 }}
         className="text-sm sm:text-base"
         rounded={"full"}
-        bg={isActive ? "white" : undefined}
+        border={isActive ? "0.5px" : undefined}
+        borderColor={isActive ? "black" : undefined}
+        bg={isActive ? "#edf2f7" : undefined}
         color={isActive ? "black" : "#797979"}
         _hover={{
           textDecoration: "none",
-          bg: "whiteAlpha.200",
+          bg: "blackAlpha.100",
           color: "#797979",
         }}
       >
@@ -50,7 +52,7 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
 
 const Navbar: FunctionComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("gray.300", "whiteAlpha.200");
+  const bg = useColorModeValue("white", "whiteAlpha.200");
 
   return (
     <Flex

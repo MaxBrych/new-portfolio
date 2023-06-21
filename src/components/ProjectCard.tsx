@@ -29,7 +29,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
     <>
       <Box
         bg={bg}
-        className="flex justify-between h-full col-span-4 row-span-2 overflow-hidden bg-white md:col-span-3 rounded-3xl md:flex-col"
+        className="flex justify-between md:h-full col-span-4 row-span-2 overflow-hidden h-[216px]  bg-white md:col-span-3 rounded-3xl md:flex-col"
       >
         <div className="flex-grow w-1/2 mx-4 my-4 md:mx-6 md:mt-6 md:w-full">
           <h1
@@ -47,14 +47,15 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
           </p>
           <CTA cta={cta} href={link} />
         </div>
-
-        <Image
-          className="object-contain bottom-0 w-full h-full "
-          src={image}
-          width={240}
-          height={240}
-          alt={title}
-        />
+        <div className="flex flex-col items-end justify-end h-[216px] md:h-full ">
+          <Image
+            className="bottom-0 object-contain w-full h-[216px] md:h-full"
+            src={image}
+            width={240}
+            height={240}
+            alt={title}
+          />
+        </div>
       </Box>
     </>
   );
