@@ -52,7 +52,8 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
 
 const Navbar: FunctionComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue("white", "whiteAlpha.200");
+  const bg = useColorModeValue("white", "#1D1E20");
+  const stroke = useColorModeValue("gray.300", "gray.700");
 
   return (
     <Flex
@@ -63,14 +64,24 @@ const Navbar: FunctionComponent = () => {
       width={"full"}
       gap={4}
       maxWidth={"container.xl"}
+      position={{ base: "relative", md: "static" }} // Make the Navbar position relative on mobile
     >
-      <Box flexShrink={0} flexGrow={1}></Box>
+      <Box flexShrink={0} flexGrow={1} className="font-bold">
+        Max Brych
+      </Box>
       <HStack
         spacing={1}
         bg={bg}
         rounded={"full"}
-        px={{ base: 1, md: 2 }}
-        h={{ base: 10, md: 12 }}
+        px={{ base: 2, md: 2 }}
+        h={{ base: 12, md: 12 }}
+        position={{ base: "fixed", md: "static" }} // Make the HStack absolute on mobile
+        top={640} // Set the bottom value to 16px
+        left={4} // Set the left value to 16px
+        right={4} // Set the right value to 16px
+        borderColor={stroke} // Set the border color
+        shadow={{ base: "lg", md: "none" }} // Set the shadow
+        borderWidth={"0.5px"} // Set the border width
       >
         <Box>
           <Link href="/">Home</Link>

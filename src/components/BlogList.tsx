@@ -23,21 +23,23 @@ function BlogList({ posts }: Props) {
       <div className="flex py-2">
         <h1 className="mb-4 text-3xl font-medium">Blog</h1>
       </div>
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-3 gap-y-8 md:gap-y-16">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 gap-y-8 md:gap-y-16">
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
-            <div className="flex flex-col transition-all duration-150 cursor-pointer group ">
+            <div className="flex flex-col p-3 transition-all duration-150 bg-white border border-gray-300 cursor-pointer md:p-4 rounded-xl group ">
               <div className="relative w-full h-56">
                 <Image
-                  className="object-cover object-left rounded-2xl"
+                  className="object-cover object-left rounded-lg"
                   src={urlFor(post.mainImage).url()}
                   alt={post.title}
                   fill
                 />
                 <div className="absolute bottom-0 flex justify-between invisible w-full p-5 bg-opacity-20 rounded-b-2xl">
                   <div>
-                    <p className="text-lg font-medium">{post.title}</p>
+                    <p className="font-medium md:text-xl text-md">
+                      {post.title}
+                    </p>
                     <p>
                       {new Date(post._createdAt).toLocaleDateString("en-US", {
                         day: "numeric",
@@ -49,10 +51,12 @@ function BlogList({ posts }: Props) {
                 </div>
               </div>
               <div className="flex-1 mt-4 ">
-                <h1 className="mb-1 text-xl font-semibold leading-5">
+                <h1 className="mb-1 text-lg font-semibold leading-5 md:text-md">
                   {post.title}
                 </h1>
-                <p className="line-clamp-3">{post.description}</p>
+                <p className="text-sm line-clamp-3 md:text-md">
+                  {post.description}
+                </p>
               </div>
             </div>
           </ClientSideRoute>
