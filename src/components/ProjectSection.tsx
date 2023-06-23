@@ -13,11 +13,11 @@ type Props = {
 
 export default function ProjectSection({ projects }: Props) {
   return (
-    <div className="py-8 pb-6 md:px-16 md:py-14">
+    <div className="py-4 pb-6 md:px-16 md:py-14">
       <div className="flex py-2">
         <h1 className="mb-4 text-3xl font-medium">Projekte</h1>
       </div>
-      <div className="grid grid-cols-1 gap-2 md:gap-y-16">
+      <div className="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-y-16">
         {/* Posts */}
         {projects.map((project: any) => (
           <ClientSideRoute key={project._id} route={project.link}>

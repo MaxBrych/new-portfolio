@@ -65,7 +65,7 @@ const Post = ({ post }: { post: Post }) => {
           background={bg}
           className={`${manrope.className} flex flex-col items-center w-full font-modern md:p-8 sm:py-14`}
         >
-          <div className="py-20 md:py-18 md:w-1/3">
+          <div className="py-6 md:py-12 md:w-1/2">
             <div className="px-4 ">
               <div>
                 <h1 className="text-4xl font-bold tracking-tight md:text-5xl leading-16">

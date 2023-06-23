@@ -19,11 +19,11 @@ function BlogList({ posts }: Props) {
   const color = useColorModeValue("gray.700", "white");
 
   return (
-    <div className="py-8 md:px-16 md:py-14">
+    <div className="py-4 md:px-16 md:py-14">
       <div className="flex py-2">
         <h1 className="mb-4 text-3xl font-medium">Blog</h1>
       </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 gap-y-8 md:gap-y-16">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 gap-y-8 md:gap-y-16">
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
