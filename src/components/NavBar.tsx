@@ -53,7 +53,7 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
 const Navbar: FunctionComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("white", "#1D1E20");
-  const stroke = useColorModeValue("gray.200", "gray.700");
+  const stroke = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
 
   return (
     <Flex

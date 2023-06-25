@@ -20,7 +20,7 @@ export default function Home() {
   }, []);
 
   const bg = useColorModeValue("#f7f7f7", "#0a0b0d");
-  const border = useColorModeValue("gray.200", "gray.700");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
   const color = useColorModeValue("gray.700", "white");
 
   return (
