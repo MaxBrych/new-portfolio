@@ -76,6 +76,7 @@ const Navbar: FunctionComponent = () => {
         px={{ base: 2, md: 2 }}
         h={{ base: 12, md: 12 }}
         position={{ base: "fixed", md: "static" }} // Make the HStack absolute on mobile
+        zIndex={100}
         top={600} // Set the bottom value to 16px
         left={4} // Set the left value to 16px
         right={4} // Set the right value to 16px
