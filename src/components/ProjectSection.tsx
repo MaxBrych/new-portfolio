@@ -12,12 +12,12 @@ type Props = {
   projects: Project[];
 };
 
-const bg = useColorModeValue("white", "whiteAlpha.200");
-const border = useColorModeValue("gray.200", "gray.700");
-const heading = useColorModeValue("gray.700", "gray.100");
-const text = useColorModeValue("gray.500", "gray.200");
-
 export default function ProjectSection({ projects }: Props) {
+  const bg = useColorModeValue("white", "whiteAlpha.200");
+  const border = useColorModeValue("gray.200", "gray.700");
+  const heading = useColorModeValue("gray.700", "gray.100");
+  const text = useColorModeValue("gray.500", "gray.200");
+
   return (
     <div className="py-4 pb-6 md:px-16 md:py-14">
       <div className="flex py-2">
