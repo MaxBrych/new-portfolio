@@ -6,7 +6,6 @@ import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
 export default function Hero() {
   const bg = useColorModeValue("white", "whiteAlpha.200");
   const border = useColorModeValue("gray.200", "gray.700");
-
   const heading = useColorModeValue("gray.700", "gray.100");
   const text = useColorModeValue("gray.700", "gray.200");
 

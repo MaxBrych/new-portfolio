@@ -13,10 +13,10 @@ function ProjectList({ projects }: Props) {
   {
     /*console.log(posts.length);*/
   }
-  const bg = useColorModeValue("gray.100", "#0a0b0d");
-  const color = useColorModeValue("gray.500", "gray.500");
+  const bg = useColorModeValue("white", "whiteAlpha.200");
   const border = useColorModeValue("gray.200", "gray.700");
-  const text = useColorModeValue("blackAlpha.900", "white");
+  const heading = useColorModeValue("gray.700", "gray.100");
+  const text = useColorModeValue("gray.500", "gray.200");
 
   return (
     <div className="">
@@ -25,6 +25,7 @@ function ProjectList({ projects }: Props) {
         {projects.map((project) => (
           <ClientSideRoute key={project._id} route={project.link}>
             <Box
+              bg={bg}
               border="1px solid"
               borderColor={border}
               className="flex flex-col cursor-pointer group"
@@ -38,10 +39,10 @@ function ProjectList({ projects }: Props) {
                 />
                 <div className="absolute bottom-0 flex justify-between invisible w-full p-5 bg-opacity-20 rounded-b-2xl">
                   <div>
-                    <Heading color={text} className="text-lg font-bold">
+                    <Heading color={heading} className="text-lg font-bold">
                       {project.title}
                     </Heading>
-                    <Text color={color}>
+                    <Text color={text}>
                       {new Date(project._createdAt).toLocaleDateString(
                         "en-US",
                         {
@@ -56,12 +57,12 @@ function ProjectList({ projects }: Props) {
               </div>
               <div className="flex-1 mt-4 ">
                 <Heading
-                  color={text}
+                  color={heading}
                   className="mb-1 text-xl font-semibold leading-5"
                 >
                   {project.title}
                 </Heading>
-                <Text color={color} className="line-clamp-3">
+                <Text color={text} className="line-clamp-3">
                   {project.description}
                 </Text>
               </div>
