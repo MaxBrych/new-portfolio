@@ -6,10 +6,11 @@ import { PortableText } from "@portabletext/react";
 import { RichTextComponents } from "../../components/RichTextComponents";
 import Link from "next/link";
 import { MdArrowBackIosNew } from "react-icons/md";
-import { Manrope } from "next/font/google";
+import { Manrope, Inter } from "next/font/google";
 import { Box, Container, useColorModeValue } from "@chakra-ui/react";
 import Navbar from "@/components/NavBar";
 const manrope = Manrope({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 type Props = {
   params: {
@@ -64,7 +65,7 @@ const Post = ({ post }: { post: Post }) => {
         <Navbar />
         <Box
           background={bg}
-          className={`${manrope.className} flex flex-col items-center w-full font-modern md:p-8 sm:py-14`}
+          className={`${inter.className} flex flex-col items-center w-full font-modern md:p-8 sm:py-14`}
         >
           <div className="py-6 md:py-12 md:w-1/2">
             <div className="px-4 ">

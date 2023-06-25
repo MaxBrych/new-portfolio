@@ -74,7 +74,7 @@ export default function NewsletterForm() {
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-bold transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-[#CCC] hover:bg-[#DDD] focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 focus:ring-offset-cyan-50"
+          className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-bold transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-[#ddd] hover:bg-[#ccc] focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 focus:ring-offset-cyan-50"
         >
           Abonnieren
         </button>

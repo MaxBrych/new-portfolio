@@ -22,6 +22,7 @@ export default function Blog({ posts }: any) {
   return (
     <Container
       pt={4}
+      pb={6}
       maxW="full"
       className="md:px-24 md:py-16 "
       bg={bg}

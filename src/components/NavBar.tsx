@@ -53,7 +53,7 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
 const Navbar: FunctionComponent = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("white", "#1D1E20");
-  const stroke = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
 
   return (
     <Flex
@@ -66,9 +66,7 @@ const Navbar: FunctionComponent = () => {
       maxWidth={"container.xl"}
       position={{ base: "relative", md: "static" }} // Make the Navbar position relative on mobile
     >
-      <Box flexShrink={0} flexGrow={1} className="font-bold">
-        Max Brych
-      </Box>
+      <Box flexShrink={0} flexGrow={1} className="font-bold"></Box>
       <HStack
         spacing={1}
         bg={bg}
@@ -80,7 +78,7 @@ const Navbar: FunctionComponent = () => {
         top={600} // Set the bottom value to 16px
         left={4} // Set the left value to 16px
         right={4} // Set the right value to 16px
-        borderColor={stroke} // Set the border color
+        borderColor={border} // Set the border color
         shadow={{ base: "lg", md: "none" }} // Set the shadow
         borderWidth={"0.5px"} // Set the border width
       >
@@ -97,6 +95,8 @@ const Navbar: FunctionComponent = () => {
       <IconButton
         bg={bg}
         scale={2}
+        border="1px solid"
+        borderColor={border}
         rounded={"full"}
         aria-label="Toggle Color Mode"
         icon={colorMode === "light" ? <MoonIcon /> : <SunIcon />}

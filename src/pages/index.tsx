@@ -12,6 +12,7 @@ import Navbar from "@/components/NavBar";
 import { Inter, Manrope } from "next/font/google";
 import { Box, Container, useColorModeValue } from "@chakra-ui/react";
 const manrope = Manrope({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -40,7 +41,7 @@ export default function Home() {
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
               transition={{ duration: 0.2 }}
-              className={`${manrope.className} grid w-full pb-6 md:p-6 min-h-screen grid-cols-4 grid-rows-4 gap-2 font-sans md:gap-4 md:grid-cols-12 md:grid-rows-3  `}
+              className={`${inter.className} grid w-full pb-6 md:p-6 min-h-screen grid-cols-4 grid-rows-4 gap-2 font-sans md:gap-4 md:grid-cols-12 md:grid-rows-3  `}
             >
               <Hero />
               <IconComponent
@@ -69,7 +70,7 @@ export default function Home() {
                 }
                 title={"Prive Wallet"}
                 image={
-                  "https://cdn.discordapp.com/attachments/911669935363752026/1122481274192416858/New_Macbook_Pro_Mockup_Front_View-1.png"
+                  "https://cdn.discordapp.com/attachments/911669935363752026/1122614503398453248/PRIVE_app.png"
                 }
                 description={"Konzept und UI/UX Design"}
                 cta={"Jetzt Testen"}
