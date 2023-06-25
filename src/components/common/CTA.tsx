@@ -7,11 +7,12 @@ import { Text } from "@chakra-ui/react";
 export default function CTA({ cta, href }: any) {
   const bg = useColorModeValue("white", "blackAlpha.900");
   const text = useColorModeValue("gray.700", "gray.200");
+
   return (
     <div className="flex-shrink-0">
       <Link
         href={href}
-        className="inline-flex items-center justify-between gap-2 py-2 pl-4 pr-2 text-xs font-bold tracking-tight transition-all duration-150 rounded-full cursor-pointer text-cyan-10 bg-cyan-50 md:pl-5 h-9 md:text-sm md:h-11 md:gap-3 hover:bg-cyan-70"
+        className="inline-flex items-center justify-between gap-2 py-2 pl-4 pr-2 text-xs font-bold tracking-tight transition-all duration-150 rounded-full cursor-pointer text-black bg-[#CCC] md:pl-5 h-9 md:text-sm md:h-11 md:gap-3 hover:bg-[#DDD]"
       >
         {cta}
         <FiArrowUpRight className="w-6 h-6 p-1 rounded-full md:w-8 md:h-8 " />
