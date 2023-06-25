@@ -5,12 +5,16 @@ import { Box, Heading, useColorModeValue } from "@chakra-ui/react";
 
 export default function Hero() {
   const bg = useColorModeValue("white", "whiteAlpha.200");
+  const border = useColorModeValue("gray.200", "gray.700");
+
   const heading = useColorModeValue("gray.700", "gray.100");
   const text = useColorModeValue("gray.700", "gray.200");
 
   return (
     <Box
       bg={bg}
+      border="1px solid"
+      borderColor={border}
       className="col-span-4 row-span-2 p-4 cursor-default md:p-6 md:row-span-1 rounded-3xl md:col-span-6"
     >
       <Image

@@ -19,7 +19,8 @@ export default function Home() {
     setIsVisible(true);
   }, []);
 
-  const bg = useColorModeValue("gray.100", "#0a0b0d");
+  const bg = useColorModeValue("#f7f7f7", "#0a0b0d");
+  const border = useColorModeValue("gray.200", "gray.700");
   const color = useColorModeValue("gray.700", "white");
 
   return (

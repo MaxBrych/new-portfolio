@@ -16,12 +16,15 @@ const IconComponent: React.FC<IconComponentProps> = ({ Icon, color, href }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const bg = useColorModeValue("white", "whiteAlpha.200");
   const text = useColorModeValue("gray.700", "gray.100");
+  const border = useColorModeValue("gray.200", "gray.700");
 
   return (
     <Box
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       bg={bg}
+      border="1px solid"
+      borderColor={border}
       className="flex items-center justify-center col-span-2 row-span-1 transition-all duration-100 bg-white cursor-pointer hover:scale-105 hover md:row-span-1 md:col-span-3 rounded-3xl"
     >
       <Link href={href}>

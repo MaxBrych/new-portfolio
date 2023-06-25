@@ -24,11 +24,14 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
   const bg = useColorModeValue("white", "whiteAlpha.200");
   const heading = useColorModeValue("gray.700", "gray.100");
   const text = useColorModeValue("gray.700", "gray.200");
+  const border = useColorModeValue("gray.200", "gray.700");
 
   return (
     <>
       <Box
         bg={bg}
+        border="1px solid"
+        borderColor={border}
         className="flex justify-between md:h-full col-span-4 row-span-2 overflow-hidden h-[216px]  bg-white md:col-span-3 rounded-3xl md:flex-col"
       >
         <div className="flex-grow w-1/2 mx-4 my-4 md:mx-6 md:mt-6 md:w-full">

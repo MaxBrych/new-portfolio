@@ -7,6 +7,7 @@ export default function NewsletterForm() {
   const bg = useColorModeValue("white", "whiteAlpha.200");
   const text = useColorModeValue("gray.700", "gray.200");
   const heading = useColorModeValue("gray.700", "gray.100");
+  const border = useColorModeValue("gray.200", "gray.700");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,6 +39,8 @@ export default function NewsletterForm() {
   return (
     <Box
       bg={bg}
+      border="1px solid"
+      borderColor={border}
       className="col-span-4 row-span-2 p-4 bg-white md:p-6 md:row-span-1 rounded-3xl md:col-span-6"
     >
       <h2

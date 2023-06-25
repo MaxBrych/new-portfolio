@@ -5,7 +5,8 @@ import { Container, useColorModeValue } from "@chakra-ui/react";
 import React from "react";
 
 export default function Projects() {
-  const bg = useColorModeValue("gray.100", "#0a0b0d");
+  const bg = useColorModeValue("#f7f7f7", "#0a0b0d");
+  const border = useColorModeValue("gray.200", "gray.700");
   const color = useColorModeValue("gray.700", "white");
   const { data, isLoading, isError } = useProject();
 
