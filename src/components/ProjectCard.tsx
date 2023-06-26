@@ -24,7 +24,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
   const bg = useColorModeValue("white", "whiteAlpha.300");
   const heading = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
   const text = useColorModeValue("blackAplha.500", "whiteAlpha.500");
-  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
 
   return (
     <>

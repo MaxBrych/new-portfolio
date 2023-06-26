@@ -16,7 +16,7 @@ const IconComponent: React.FC<IconComponentProps> = ({ Icon, color, href }) => {
   const [isHovered, setIsHovered] = React.useState(false);
   const bg = useColorModeValue("white", "whiteAlpha.300");
   const text = useColorModeValue("gray.700", "gray.100");
-  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
 
   return (
     <Box

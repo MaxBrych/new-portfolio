@@ -34,7 +34,7 @@ const Link: FunctionComponent<LinkProps> = ({ href, children }) => {
         h={{ base: 8, md: 10 }}
         className="text-sm sm:text-base"
         rounded={"full"}
-        border={isActive ? "0.5px" : undefined}
+        border={isActive ? "1.5px" : undefined}
         borderColor={isActive ? "black" : undefined}
         bg={isActive ? "#edf2f7" : undefined}
         color={isActive ? "black" : "#797979"}

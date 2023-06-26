@@ -14,7 +14,7 @@ type Props = {
 
 export default function ProjectSection({ projects }: Props) {
   const bg = useColorModeValue("white", "whiteAlpha.300");
-  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
   const heading = useColorModeValue("blackAlpha.900", "whiteAlpha.900");
   const text = useColorModeValue("blackAplha.500", "whiteAlpha.500");
 

@@ -4,7 +4,7 @@ import { useState, FormEvent } from "react";
 export default function NewsletterForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const bg = useColorModeValue("white", "whiteAlpha.200");
+  const bg = useColorModeValue("white", "whiteAlpha.300");
   const heading = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
   const text = useColorModeValue("blackAplha.500", "whiteAlpha.500");
   const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
@@ -74,7 +74,7 @@ export default function NewsletterForm() {
         />
         <button
           type="submit"
-          className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-bold transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-[#ddd] hover:bg-[#ccc] focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 focus:ring-offset-cyan-50"
+          className="inline-flex items-center justify-center w-full h-12 px-6 py-3 text-base font-bold transition-all duration-150 border border-transparent rounded-full md:h-14 text-cyan-10 bg-[#eee] hover:bg-[#ddd] focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-1 focus:ring-offset-cyan-50"
         >
           Abonnieren
         </button>
