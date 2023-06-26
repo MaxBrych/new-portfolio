@@ -7,7 +7,7 @@ import React from "react";
 export default function Projects() {
   const bg = useColorModeValue("#f7f7f7", "#0a0b0d");
   const border = useColorModeValue("gray.200", "gray.700");
-  const color = useColorModeValue("gray.700", "white");
+  const color = useColorModeValue("black", "white");
   const { data, isLoading, isError } = useProject();
 
   if (isLoading) {

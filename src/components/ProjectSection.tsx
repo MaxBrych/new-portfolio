@@ -13,9 +13,9 @@ type Props = {
 };
 
 export default function ProjectSection({ projects }: Props) {
-  const bg = useColorModeValue("white", "whiteAlpha.200");
-  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
-  const heading = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
+  const bg = useColorModeValue("white", "whiteAlpha.300");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
+  const heading = useColorModeValue("blackAlpha.900", "whiteAlpha.900");
   const text = useColorModeValue("blackAplha.500", "whiteAlpha.500");
 
   return (
@@ -31,7 +31,7 @@ export default function ProjectSection({ projects }: Props) {
           <ClientSideRoute key={project._id} route={project.link}>
             <Box
               bg={bg}
-              border="1px solid"
+              border="1.5px solid"
               borderColor={border}
               className="flex flex-col p-3 transition-all duration-150 cursor-pointer md:p-4 rounded-xl group "
             >

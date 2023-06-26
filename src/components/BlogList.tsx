@@ -21,9 +21,9 @@ function BlogList({ posts }: Props) {
   {
     /*console.log(posts.length);*/
   }
-  const bg = useColorModeValue("white", "whiteAlpha.200");
-  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
-  const heading = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
+  const bg = useColorModeValue("white", "whiteAlpha.300");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
+  const heading = useColorModeValue("blackAlpha.900", "whiteAlpha.900");
   const text = useColorModeValue("blackAplha.500", "whiteAlpha.500");
 
   return (
@@ -38,7 +38,7 @@ function BlogList({ posts }: Props) {
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>
             <Box
-              border="1px solid"
+              border="1.5px solid"
               borderColor={border}
               bg={bg}
               className="flex flex-col p-3 transition-all duration-150 border cursor-pointer md:p-4 rounded-xl group "

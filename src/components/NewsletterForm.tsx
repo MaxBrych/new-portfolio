@@ -39,9 +39,9 @@ export default function NewsletterForm() {
   return (
     <Box
       bg={bg}
-      border="1px solid"
+      border="1.5px solid"
       borderColor={border}
-      className="col-span-4 row-span-2 p-4 bg-white md:p-6 md:row-span-1 rounded-3xl md:col-span-6"
+      className="col-span-4 row-span-2 p-4 md:p-6 md:row-span-1 rounded-3xl md:col-span-6"
     >
       <h2
         color={heading}

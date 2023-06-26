@@ -21,16 +21,16 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
   cta,
   link,
 }) => {
-  const bg = useColorModeValue("white", "whiteAlpha.200");
+  const bg = useColorModeValue("white", "whiteAlpha.300");
   const heading = useColorModeValue("blackAlpha.700", "whiteAlpha.700");
   const text = useColorModeValue("blackAplha.500", "whiteAlpha.500");
-  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.200");
+  const border = useColorModeValue("blackAlpha.200", "whiteAlpha.300");
 
   return (
     <>
       <Box
         bg={bg}
-        border="1px solid"
+        border="1.5px solid"
         borderColor={border}
         className="flex justify-between md:h-full col-span-4 row-span-2 overflow-hidden h-[216px]  bg-white md:col-span-3 rounded-3xl md:flex-col"
       >

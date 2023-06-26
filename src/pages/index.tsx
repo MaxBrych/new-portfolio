@@ -4,14 +4,12 @@ import { useEffect, useState } from "react";
 import { AiOutlineTwitter, AiFillYoutube } from "react-icons/ai";
 import IconComponent from "@/components/SocialLink";
 import { FiFigma, FiGithub } from "react-icons/fi";
-import Neuland from "@/components/Neuland";
-import Header from "@/components/Header";
+
 import Hero from "@/components/Hero";
 import NewsletterForm from "@/components/NewsletterForm";
 import Navbar from "@/components/NavBar";
-import { Inter, Manrope } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Box, Container, useColorModeValue } from "@chakra-ui/react";
-const manrope = Manrope({ subsets: ["latin"] });
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -71,7 +69,7 @@ export default function Home() {
                 }
                 title={"Prive Wallet"}
                 image={
-                  "https://cdn.discordapp.com/attachments/911669935363752026/1122614503398453248/PRIVE_app.png"
+                  "https://cdn.discordapp.com/attachments/911904116782026772/1122930331733991514/App.png"
                 }
                 description={"Konzept und UI/UX Design"}
                 cta={"Jetzt Testen"}
@@ -80,7 +78,7 @@ export default function Home() {
                 link={"https://www.citydao.io/"}
                 title={"CityDAO"}
                 image={
-                  "https://cdn.discordapp.com/attachments/911669935363752026/1122481274565689494/New_Macbook_Pro_Mockup_Front_View.png"
+                  "https://cdn.discordapp.com/attachments/911904116782026772/1122930331360710667/Web.png"
                 }
                 description={"Branding, Website Design und Entwicklung"}
                 cta={"Zur Website"}
