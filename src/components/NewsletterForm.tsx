@@ -53,8 +53,8 @@ export default function NewsletterForm() {
         color={text}
         className="mb-4 text-xs leading-4 font-regular md:leading-5 md:text-base"
       >
-        Erhalte Visionen und Ideen für eine bessere Zukunft durch die digitale
-        Revolution.
+        Erhalte Visionen und Ideen für eine bessere Zukunft durch
+        Digitalisierung.
       </p>
       <form
         onSubmit={handleSubmit}
