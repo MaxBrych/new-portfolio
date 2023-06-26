@@ -27,13 +27,13 @@ export default function Hero() {
       />
       <h1
         color={heading}
-        className="mb-1 text-2xl font-bold tracking-tight md:mb-2 md:text-3xl "
+        className="mb-1 text-2xl font-semibold tracking-tight md:mb-2 md:text-3xl "
       >
         Hi, ich bin Max!
       </h1>
       <p
         color={text}
-        className="text-sm font-medium leading-5 md:leading-7 md:text-lg"
+        className="text-sm leading-5 font-regular md:leading-7 md:text-lg"
       >
         Ein Web Entwickler und Designer aus Deutschland.
         <br /> Ich interessiere mich für Web3, KI Prompts und neue Technologien.

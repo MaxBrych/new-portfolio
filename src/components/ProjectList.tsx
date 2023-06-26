@@ -39,7 +39,7 @@ function ProjectList({ projects }: Props) {
                 />
                 <div className="absolute bottom-0 flex justify-between invisible w-full p-5 bg-opacity-20 rounded-b-2xl">
                   <div>
-                    <Heading color={heading} className="text-lg font-bold">
+                    <Heading color={heading} className="text-lg font-semibold">
                       {project.title}
                     </Heading>
                     <Text color={text}>

@@ -29,7 +29,7 @@ function BlogList({ posts }: Props) {
   return (
     <div className="py-4 md:px-16 md:py-14">
       <div className="flex py-2">
-        <Text color={heading} className="mb-4 text-3xl font-medium">
+        <Text color={heading} className="mb-4 text-3xl font-semibold">
           Blog
         </Text>
       </div>
@@ -54,7 +54,7 @@ function BlogList({ posts }: Props) {
                   <div>
                     <Text
                       color={text}
-                      className="font-medium md:text-xl text-md"
+                      className="font-regular md:text-xl text-md"
                     >
                       {post.title}
                     </Text>

@@ -37,14 +37,14 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({
         <div className="flex-grow w-1/2 mx-4 my-4 md:mx-6 md:mt-6 md:w-full">
           <h1
             color={heading}
-            className="text-xl font-bold tracking-tight md:text-2xl"
+            className="text-xl font-semibold tracking-tight md:text-2xl"
           >
             {" "}
             {title}
           </h1>
           <p
             color={text}
-            className="w-full mb-6 text-xs font-medium md:mt-2 md:text-base"
+            className="w-full mb-6 text-xs font-regular md:mt-2 md:text-base"
           >
             {description}
           </p>

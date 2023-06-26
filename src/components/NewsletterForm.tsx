@@ -45,13 +45,13 @@ export default function NewsletterForm() {
     >
       <h2
         color={heading}
-        className="mb-1 text-xl font-bold tracking-tight md:mb-2 md:text-2xl"
+        className="mb-1 text-xl font-semibold tracking-tight md:mb-2 md:text-2xl"
       >
         Folge meinem Newsletter
       </h2>
       <p
         color={text}
-        className="mb-4 text-xs font-medium leading-4 md:leading-5 md:text-base"
+        className="mb-4 text-xs leading-4 font-regular md:leading-5 md:text-base"
       >
         Erhalte Visionen und Ideen für eine bessere Zukunft durch die digitale
         Revolution.

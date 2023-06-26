@@ -19,7 +19,7 @@ export default function Projects() {
 
   return (
     <Container
-      pt={4}
+      pt={2}
       pb={6}
       maxW="full"
       className="p-0 md:px-24 md:py-16 "

@@ -21,7 +21,7 @@ export default function ProjectSection({ projects }: Props) {
   return (
     <div className="py-4 pb-6 md:px-16 md:py-14">
       <div className="flex py-2">
-        <Text color={heading} className="mb-4 text-3xl font-medium">
+        <Text color={heading} className="mb-4 text-3xl font-semibold">
           Projekte
         </Text>
       </div>
@@ -46,7 +46,7 @@ export default function ProjectSection({ projects }: Props) {
                   <div>
                     <Text
                       color={heading}
-                      className="font-medium md:text-lg text-md"
+                      className="font-regular md:text-lg text-md"
                     >
                       {project.title}
                     </Text>
@@ -66,7 +66,7 @@ export default function ProjectSection({ projects }: Props) {
               <div className="flex-1 mt-4 ">
                 <Text
                   color={heading}
-                  className="mb-1 font-medium leading-5 md:text-xl text-md"
+                  className="mb-1 leading-5 font-regular md:text-xl text-md"
                 >
                   {project.title}
                 </Text>
