@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <Container
         pt={4}
-        pb={8}
+        pb={16}
         maxW="full"
         className="p-0 md:px-24 md:py-16 "
         bg={bg}

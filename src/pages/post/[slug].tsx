@@ -65,12 +65,12 @@ const Post = ({ post }: { post: Post }) => {
         <Navbar />
         <Box
           background={bg}
-          className={`${inter.className} flex flex-col items-center w-full font-modern md:p-8 sm:py-14`}
+          className={`${inter.className} flex flex-col items-center w-full  md:p-8 sm:py-14`}
         >
           <div className="py-6 md:py-12 md:w-1/2">
             <div className="px-4 ">
               <div>
-                <h1 className="text-4xl font-bold tracking-tight md:text-5xl leading-16">
+                <h1 className="text-4xl font-semibold tracking-tight md:text-5xl leading-16">
                   {post.title}
                 </h1>
                 <div className="flex justify-between py-6 sm:py-8 ">
