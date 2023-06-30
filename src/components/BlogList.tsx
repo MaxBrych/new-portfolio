@@ -41,7 +41,7 @@ function BlogList({ posts }: Props) {
               border="1.5px solid"
               borderColor={border}
               bg={bg}
-              className="flex flex-col p-3 transition-all duration-150 border cursor-pointer md:p-4 rounded-xl group "
+              className="flex flex-col p-3 transition-all duration-150 border cursor-pointer hover:scale-50 md:p-4 rounded-xl group "
             >
               <div className="relative w-full h-40 md:h-56h-56">
                 <Image

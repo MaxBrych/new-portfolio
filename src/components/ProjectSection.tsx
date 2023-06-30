@@ -33,7 +33,7 @@ export default function ProjectSection({ projects }: Props) {
               bg={bg}
               border="1.5px solid"
               borderColor={border}
-              className="flex flex-col p-3 transition-all duration-150 cursor-pointer md:p-4 rounded-xl group "
+              className="flex flex-col p-3 transition-all duration-150 cursor-pointer hover:scale-50 md:p-4 rounded-xl group "
             >
               <div className="relative w-full h-40 border rounded-lg md:h-56 ">
                 <Image
@@ -46,7 +46,7 @@ export default function ProjectSection({ projects }: Props) {
                   <div>
                     <Text
                       color={heading}
-                      className="font-regular md:text-lg text-md"
+                      className="font-semibold md:text-lg text-md"
                     >
                       {project.title}
                     </Text>
