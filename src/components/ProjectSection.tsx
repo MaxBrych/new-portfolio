@@ -33,7 +33,7 @@ export default function ProjectSection({ projects }: Props) {
               bg={bg}
               border="1.5px solid"
               borderColor={border}
-              className="flex flex-col p-3 transition-all duration-150 cursor-pointer hover:scale-50 md:p-4 rounded-xl group "
+              className="flex flex-col p-3 transition-all duration-150 cursor-pointer hover:scale-105 md:p-4 rounded-xl group "
             >
               <div className="relative w-full h-40 border rounded-lg md:h-56 ">
                 <Image
