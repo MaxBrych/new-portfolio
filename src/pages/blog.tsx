@@ -42,6 +42,5 @@ export async function getServerSideProps() {
     props: {
       posts,
     },
-    revalidate: 30,
   };
 }
