@@ -33,7 +33,7 @@ function BlogList({ posts }: Props) {
           Blog
         </Text>
       </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 gap-y-8 md:gap-y-16">
+      <div className="grid grid-cols-1 gap-2 md:gap-4 md:grid-cols-3 gap-y-8 md:gap-y-16">
         {/* Posts */}
         {posts.map((post) => (
           <ClientSideRoute key={post._id} route={`/post/${post.slug.current}`}>

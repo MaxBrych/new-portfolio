@@ -25,7 +25,7 @@ export default function ProjectSection({ projects }: Props) {
           Projekte
         </Text>
       </div>
-      <div className="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-y-16">
+      <div className="grid grid-cols-1 gap-2 md:gap-4 md:grid-cols-3 md:gap-y-16">
         {/* Posts */}
         {projects.map((project: any) => (
           <ClientSideRoute key={project._id} route={project.link}>
@@ -35,7 +35,7 @@ export default function ProjectSection({ projects }: Props) {
               borderColor={border}
               className="flex flex-col p-3 transition-all duration-150 cursor-pointer hover:scale-105 md:p-4 rounded-xl group "
             >
-              <div className="relative w-full h-40 border rounded-lg md:h-56 ">
+              <div className="relative w-full h-40 border rounded-lg md:h-64 ">
                 <Image
                   className="object-cover object-center rounded-lg"
                   src={urlFor(project.mainImage).url()}

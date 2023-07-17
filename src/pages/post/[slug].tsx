@@ -76,11 +76,11 @@ const Post = ({ post }: { post: Post }) => {
                 <div className="flex justify-between py-6 sm:py-8 ">
                   <div className="flex flex-row items-center ">
                     <Image
-                      className="h-12 rounded-full"
+                      className="w-12 h-12 rounded-full"
                       src={urlFor(post.author.image).url()}
                       alt={post.author.name}
-                      width={44}
-                      height={44}
+                      width={48}
+                      height={48}
                     />
                     <p className="items-center px-2 font-semibold text-m">
                       {" "}
