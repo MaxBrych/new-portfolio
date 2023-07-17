@@ -43,7 +43,7 @@ function BlogList({ posts }: Props) {
               bg={bg}
               className="flex flex-col p-3 transition-all duration-150 border cursor-pointer hover:scale-105 md:p-4 rounded-xl group "
             >
-              <div className="relative w-full h-40 md:h-56h-56">
+              <div className="relative w-full h-40 md:h-64">
                 <Image
                   className="object-cover object-left rounded-lg"
                   src={urlFor(post.mainImage).url()}
