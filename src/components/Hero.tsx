@@ -36,7 +36,7 @@ export default function Hero() {
         className="text-sm leading-5 font-regular md:leading-7 md:text-lg"
       >
         Ein Web Entwickler und Designer aus Deutschland.
-        <br /> Ich interessiere mich für Web3, KI Prompts und neue Technologien.
+        <br /> Ich interessiere mich für Web3, KI und neue Technologien.
       </p>
     </Box>
   );
