@@ -21,16 +21,24 @@ export default function Blog({ posts }: any) {
 
   return (
     <Container
-      pt={0}
+      pt={4}
       pb={16}
       maxW="full"
-      className="md:px-24 md:py-16 "
+      className="flex flex-col items-center justify-center p-0 md:px-24 md:py-16"
       bg={bg}
-      minHeight={"100vh"}
       color={color}
     >
-      <Navbar />
-      <BlogList posts={posts} />
+      <Container
+        pt={4}
+        pb={16}
+        maxW="5xl"
+        className="p-0 md:px-24 md:py-16 "
+        bg={bg}
+        color={color}
+      >
+        <Navbar />
+        <BlogList posts={posts} />
+      </Container>
     </Container>
   );
 }

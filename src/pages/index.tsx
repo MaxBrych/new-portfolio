@@ -23,11 +23,18 @@ export default function Home() {
   const color = useColorModeValue("gray.700", "white");
 
   return (
-    <>
+    <Container
+      pt={4}
+      pb={16}
+      maxW="full"
+      className="flex flex-col items-center justify-center p-0 md:px-24 md:py-16"
+      bg={bg}
+      color={color}
+    >
       <Container
         pt={4}
         pb={16}
-        maxW="full"
+        maxW="5xl"
         className="p-0 md:px-24 md:py-16 "
         bg={bg}
         color={color}
@@ -89,6 +96,6 @@ export default function Home() {
           )}
         </Box>
       </Container>
-    </>
+    </Container>
   );
 }

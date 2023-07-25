@@ -19,17 +19,25 @@ export default function Projects() {
 
   return (
     <Container
-      pt={0}
+      pt={4}
       pb={16}
       maxW="full"
-      className="p-0 md:px-24 md:py-16 "
+      className="flex flex-col items-center justify-center p-0 md:px-24 md:py-16"
       bg={bg}
-      minHeight={"100vh"}
       color={color}
     >
-      <Navbar />
+      <Container
+        pt={4}
+        pb={16}
+        maxW="5xl"
+        className="p-0 md:px-24 md:py-16 "
+        bg={bg}
+        color={color}
+      >
+        <Navbar />
 
-      <ProjectSection projects={data} />
+        <ProjectSection projects={data} />
+      </Container>
     </Container>
   );
 }
