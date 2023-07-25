@@ -29,7 +29,7 @@ export default function Projects() {
       <Container
         pt={4}
         pb={16}
-        maxW="5xl"
+        maxW="7xl"
         className="p-0 md:px-24 md:py-16 "
         bg={bg}
         color={color}
