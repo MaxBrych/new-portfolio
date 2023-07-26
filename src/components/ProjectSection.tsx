@@ -35,7 +35,7 @@ export default function ProjectSection({ projects }: Props) {
               borderColor={border}
               className="flex flex-col p-3 transition-all duration-150 cursor-pointer hover:scale-105 md:p-4 rounded-xl group "
             >
-              <div className="relative w-full h-40 border rounded-lg md:h-64 ">
+              <div className="relative w-full h-40 border rounded-lg md:h-56 ">
                 <Image
                   className="object-cover object-center rounded-lg"
                   src={urlFor(project.mainImage).url()}

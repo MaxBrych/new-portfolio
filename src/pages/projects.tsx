@@ -19,8 +19,7 @@ export default function Projects() {
 
   return (
     <Container
-      pt={4}
-      pb={16}
+      p={0}
       maxW="full"
       className="flex flex-col items-center justify-center p-0 md:px-24 md:py-16"
       bg={bg}
