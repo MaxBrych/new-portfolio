@@ -31,7 +31,7 @@ export default function Blog({ posts }: any) {
         pt={4}
         pb={16}
         maxW="7xl"
-        className="p-0 md:px-24 md:py-16 "
+        className="min-h-screen p-0 md:px-24 md:py-16 "
         bg={bg}
         color={color}
       >
